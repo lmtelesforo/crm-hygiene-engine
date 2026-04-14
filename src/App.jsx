@@ -722,7 +722,7 @@ function PreviewPanel({ record, onClose, onApprove, onReject, saving, T }) {
 
 // ── Main App ───────────────────────────────────────────────────────────────────
 export default function App() {
-  const [dark, setDark] = useState(() => window.matchMedia('(prefers-color-scheme: dark)').matches)
+  const [dark, setDark] = useState(false)
   const T = dark ? DARK : LIGHT
 
   const [records, setRecords] = useState([])
